@@ -1,0 +1,256 @@
+/* ============================================
+   Rudra Travels — Responsive Styles
+   Mobile-first responsive breakpoints
+   ============================================ */
+
+/* ━━ Tablet & Below (< 992px) ━━ */
+@media (max-width: 991px) {
+  :root {
+    --section-padding-y: 3.5rem;
+  }
+
+  /* Navbar */
+  .navbar__links {
+    display: none;
+  }
+
+  .navbar__cta {
+    display: none;
+  }
+
+  .navbar__hamburger {
+    display: flex;
+  }
+
+  /* Booking Bar */
+  .booking-bar__form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .booking-bar__form .btn {
+    grid-column: 1 / -1;
+  }
+
+  /* Fleet */
+  .fleet__grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+  }
+
+  /* Routes */
+  .routes__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* How it works */
+  .how-it-works__grid::before {
+    display: none;
+  }
+
+  /* Testimonials */
+  .testimonials__grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Contact */
+  .contact__inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .contact__buttons {
+    justify-content: center;
+  }
+
+  /* Footer */
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+/* ━━ Mobile (< 768px) ━━ */
+@media (max-width: 767px) {
+  :root {
+    --section-padding-y: 3rem;
+    --container-padding: 1.15rem;
+    --navbar-height: 64px;
+  }
+
+  /* Hero */
+  .hero {
+    padding-bottom: var(--spacing-2xl);
+    min-height: auto;
+    padding-top: calc(var(--navbar-height) + var(--spacing-2xl));
+  }
+
+  .hero__badges {
+    gap: var(--spacing-xs);
+  }
+
+  .badge--glass {
+    font-size: var(--font-size-xs);
+    padding: 0.35rem 0.75rem;
+  }
+
+  /* Booking Bar */
+  .booking-bar {
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+  }
+
+  .booking-bar__form {
+    grid-template-columns: 1fr;
+  }
+
+  .fare-estimate__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fare-estimate__actions {
+    flex-direction: column;
+  }
+
+  /* Routes */
+  .routes__grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .route-card {
+    height: 240px;
+  }
+
+  /* How it works */
+  .how-it-works__grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Contact */
+  .contact__form-card {
+    padding: var(--spacing-lg);
+  }
+
+  .contact__phone {
+    font-size: var(--font-size-h4);
+  }
+
+  /* Footer */
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    text-align: center;
+  }
+
+  /* Trust strip */
+  .trust-strip {
+    gap: var(--spacing-lg);
+  }
+}
+
+
+/* ━━ Small Mobile (< 480px) ━━ */
+@media (max-width: 479px) {
+  .hero__title {
+    font-size: 2rem;
+  }
+
+  .hero__subtitle {
+    font-size: var(--font-size-body);
+  }
+
+  .booking-bar {
+    padding: var(--spacing-md);
+  }
+
+  .card__body {
+    padding: var(--spacing-md);
+  }
+
+  .step-card {
+    padding: var(--spacing-md);
+  }
+
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: var(--font-size-xs);
+  }
+
+  .btn--lg {
+    padding: 0.85rem 1.75rem;
+    font-size: var(--font-size-small);
+  }
+}
+
+
+/* ━━ Mobile Sticky CTA Bar ━━ */
+.mobile-cta-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: var(--color-bg, #fff);
+  border-top: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+  padding: 8px 12px;
+  gap: 8px;
+}
+
+.mobile-cta-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 8px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-text-primary, #333);
+  background: var(--color-surface, #f5f5f5);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mobile-cta-btn:active {
+  transform: scale(0.95);
+}
+
+.mobile-cta-btn--primary {
+  background: var(--color-primary, #1B4D3E);
+  color: white;
+}
+
+.mobile-cta-btn--wa {
+  background: #25D366;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .mobile-cta-bar {
+    display: flex;
+  }
+  .floating-actions {
+    display: none !important;
+  }
+  body {
+    padding-bottom: 70px;
+  }
+}
+

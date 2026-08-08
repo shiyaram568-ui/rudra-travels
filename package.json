@@ -1,0 +1,11 @@
+{
+    "name":  "rudratravels",
+    "version":  "1.0.0",
+    "description":  "Premium Outstation Cab Booking Service — All-India Tourist Permit",
+    "scripts":  {
+                    "dev":  "npx -y live-server --port=8838 --open=index.html",
+                    "start":  "npx -y serve . -l 3000"
+                },
+    "author":  "RUDRA TRAVELS",
+    "license":  "ISC"
+}

@@ -1,0 +1,122 @@
+/* ============================================
+   Rudra Travels — Design Tokens
+   All CSS custom properties (colors, typography, 
+   spacing, shadows, animations) live here.
+   ============================================ */
+
+:root {
+  /* ── Colors ── */
+  --color-primary:          #0F172A; /* Deep Navy/Slate */
+  --color-primary-light:    #1E293B;
+  --color-primary-dark:     #020617;
+  --color-accent:           #F59E0B; /* Premium Amber/Gold */
+  --color-accent-hover:     #D97706;
+  --color-accent-glow:      rgba(245, 158, 11, 0.4);
+  --gradient-primary:       linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+  --gradient-accent:        linear-gradient(135deg, #F59E0B 0%, #FBBF24 100%);
+  --color-dark:             #020617;
+  --color-dark-soft:        #0F172A;
+  --color-surface:          #FFFFFF;
+  --color-surface-alt:      #F1F5F9;
+  --color-surface-glass:    rgba(255, 255, 255, 0.85);
+  --color-surface-glass-border: rgba(226, 232, 240, 1);
+
+  --color-text-primary:     #1E293B;
+  --color-text-secondary:   #334155;
+  --color-text-muted:       #64748B;
+  --color-text-on-dark:     #FFFFFF;
+  --color-text-on-dark-muted: #CBD5E1;
+
+  --color-border:           #E2E8F0;
+  --color-border-light:     #F1F5F9;
+  --color-success:          #22C55E;
+  --color-error:            #EF4444;
+  --color-whatsapp:         #25D366;
+  --color-whatsapp-hover:   #1EBE57;
+
+  /* ── Typography ── */
+  --font-heading:           'Outfit', sans-serif;
+  --font-body:              'Inter', sans-serif;
+
+  --font-size-hero:         clamp(2.5rem, 5vw, 4rem);
+  --font-size-hero-sub:     clamp(1rem, 2vw, 1.25rem);
+  --font-size-h2:           clamp(1.75rem, 3.5vw, 2.5rem);
+  --font-size-h3:           1.5rem;
+  --font-size-h4:           1.25rem;
+  --font-size-body:         1rem;
+  --font-size-body-lg:      1.125rem;
+  --font-size-small:        0.875rem;
+  --font-size-xs:           0.75rem;
+
+  --font-weight-regular:    400;
+  --font-weight-medium:     500;
+  --font-weight-semibold:   600;
+  --font-weight-bold:       700;
+  --font-weight-extrabold:  800;
+
+  --line-height-tight:      1.2;
+  --line-height-normal:     1.5;
+  --line-height-relaxed:    1.7;
+
+  --letter-spacing-tight:   -0.02em;
+  --letter-spacing-normal:  0;
+  --letter-spacing-wide:    0.05em;
+  --letter-spacing-caps:    0.1em;
+
+  /* ── Spacing ── */
+  --spacing-2xs:            0.25rem;   /* 4px */
+  --spacing-xs:             0.5rem;    /* 8px */
+  --spacing-sm:             0.75rem;   /* 12px */
+  --spacing-md:             1rem;      /* 16px */
+  --spacing-lg:             1.5rem;    /* 24px */
+  --spacing-xl:             2rem;      /* 32px */
+  --spacing-2xl:            3rem;      /* 48px */
+  --spacing-3xl:            4rem;      /* 64px */
+  --spacing-4xl:            6rem;      /* 96px */
+
+  /* ── Border Radius ── */
+  --radius-sm:              6px;
+  --radius-md:              10px;
+  --radius-lg:              16px;
+  --radius-xl:              24px;
+  --radius-full:            9999px;
+
+  /* ── Shadows ── */
+  --shadow-xs:              0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-sm:              0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md:              0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-lg:              0 12px 40px rgba(0, 0, 0, 0.12);
+  --shadow-xl:              0 24px 60px rgba(0, 0, 0, 0.16);
+  --shadow-glow-accent:     0 0 40px var(--color-accent-glow);
+  --shadow-glow-primary:    0 0 40px rgba(15, 23, 42, 0.25);
+
+  /* ── Transitions ── */
+  --transition-fast:        150ms ease;
+  --transition-base:        250ms ease;
+  --transition-smooth:      350ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow:        500ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce:      500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition-spring:      600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  /* ── Glassmorphism ── */
+  --glass-bg:               rgba(255, 255, 255, 0.1);
+  --glass-bg-strong:        rgba(255, 255, 255, 0.15);
+  --glass-border:           rgba(255, 255, 255, 0.2);
+  --glass-blur:             blur(20px);
+  --glass-blur-strong:      blur(30px);
+
+  /* ── Layout ── */
+  --container-max:          1200px;
+  --container-narrow:       900px;
+  --container-padding:      1.5rem;
+  --section-padding-y:      5rem;
+  --navbar-height:          72px;
+
+  /* ── Z-Index Scale ── */
+  --z-base:                 1;
+  --z-dropdown:             100;
+  --z-sticky:               200;
+  --z-overlay:              300;
+  --z-modal:                400;
+  --z-toast:                500;
+}

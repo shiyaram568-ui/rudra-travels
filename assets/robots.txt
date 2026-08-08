@@ -1,0 +1,10 @@
+﻿User-agent: *
+Allow: /
+
+# Ensure Googlebot can crawl CSS and JS for proper rendering
+User-agent: Googlebot
+Allow: /css/
+Allow: /js/
+Allow: /assets/
+
+Sitemap: https://www.rudratravels.com/sitemap.xml
