@@ -7,23 +7,99 @@
   <meta name="description" content="Book comfortable outstation cabs across India with RUDRA TRAVELS. 5-seater & 7-seater AC vehicles with professional drivers. Delhi to Manali, Jaipur, Agra & more.">
   <meta name="keywords" content="outstation cab, taxi booking, car rental with driver, Delhi to Manali cab, outstation travel India, RUDRA TRAVELS">
 
-  <!-- Fonts -->
+  <!-- Favicon (inline, no extra request) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+
+  <!-- Preload LCP Hero Image -->
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&w=1920&q=80" fetchpriority="high">
+
+  <!-- Preconnect to critical origins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://images.unsplash.com">
 
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <!-- Fonts: load non-blocking with media print trick -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
 
-  <!-- Stylesheets -->
+  <!-- Critical CSS inlined for instant FCP (above-fold styles) -->
+  <style>
+    /* System font fallback until Google Fonts load */
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;margin:0;padding:0;box-sizing:border-box;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    img{display:block;max-width:100%;height:auto}
+    a{color:inherit;text-decoration:none}
+    /* Trust bar */
+    .top-trust-bar{background:#0F172A;color:#fff;padding:8px 0;font-size:13px;text-align:center;overflow:hidden}
+    .top-trust-bar .container{max-width:1200px;margin:0 auto;padding:0 1.5rem}
+    .trust-bar-items{display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap}
+    .dot-separator{opacity:0.5}
+    /* Navbar */
+    .navbar{position:fixed;top:32px;left:0;right:0;height:72px;display:flex;align-items:center;z-index:200;padding:0 1.5rem;transition:background 350ms}
+    .navbar--transparent{background:transparent}
+    .navbar__inner{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:1200px;margin:0 auto}
+    .navbar__logo{display:flex;align-items:center;gap:8px;font-size:1.4rem;font-weight:800;color:#fff;letter-spacing:-0.02em}
+    .navbar__logo-icon{width:36px;height:36px;background:linear-gradient(135deg,#F59E0B,#D97706);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+    .navbar__links{display:flex;gap:4px}
+    .navbar__link{padding:8px 16px;font-size:14px;font-weight:500;color:rgba(255,255,255,0.85);border-radius:8px;transition:all 250ms}
+    .navbar__cta{display:inline-flex;align-items:center}
+    .navbar__hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
+    .navbar__hamburger span{width:24px;height:2px;background:#fff;border-radius:2px}
+    .navbar__mobile-menu{display:none}
+    /* Hero */
+    .hero{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:visible;padding:calc(72px + 4rem) 1.5rem 6rem;text-align:center}
+    .hero__content{text-align:center;max-width:800px;margin-bottom:3rem;animation:fadeInUp .8s ease-out}
+    .hero__tag{display:inline-flex;align-items:center;gap:8px;padding:.5rem 1.25rem;background:rgba(15,23,42,.4);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.15);border-radius:9999px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.1em;margin-bottom:1.5rem}
+    .hero__title{font-size:clamp(2.5rem,5vw,4rem);font-weight:800;color:#fff;line-height:1.1;margin-bottom:1.5rem}
+    .hero__title-accent{background:linear-gradient(135deg,#F59E0B,#1E293B);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .hero__subtitle{font-size:clamp(1rem,2vw,1.25rem);color:rgba(255,255,255,.9);line-height:1.7;max-width:620px;margin:0 auto 2rem}
+    .hero__badges{display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap}
+    .badge--glass{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;background:rgba(255,255,255,.1);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.2);border-radius:9999px;font-size:13px;font-weight:600;color:#fff}
+    /* Booking bar */
+    .booking-bar{width:100%;max-width:1200px;background:rgba(255,255,255,.95);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.7);border-radius:24px;padding:2rem;box-shadow:0 12px 40px rgba(0,0,0,.08)}
+    .booking-bar__title{font-size:1.25rem;font-weight:700;color:#1E293B;margin-bottom:1.5rem;text-align:center}
+    .booking-bar__form{display:grid;grid-template-columns:1fr 1fr 1fr 1fr auto;gap:1rem;align-items:end}
+    /* Buttons */
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 24px;border-radius:10px;font-weight:600;font-size:15px;border:none;cursor:pointer;transition:all 250ms}
+    .btn--primary{background:linear-gradient(135deg,#F59E0B,#FBBF24);color:#0F172A;box-shadow:0 4px 15px rgba(245,158,11,.3)}
+    .btn--outline{background:transparent;border:1.5px solid rgba(255,255,255,.3);color:#fff}
+    .btn--lg{padding:14px 28px;font-size:16px}
+    .btn--block{width:100%}
+    /* Form elements */
+    .form-group{display:flex;flex-direction:column}
+    .form-label{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:#64748B;margin-bottom:6px}
+    .form-input-wrapper{position:relative}
+    .form-input,.form-select{width:100%;padding:12px 16px 12px 42px;border:1.5px solid #E2E8F0;border-radius:10px;font-size:15px;background:#fff;transition:all 250ms;appearance:none}
+    .form-input-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:#94A3B8;pointer-events:none}
+    .container{max-width:1200px;margin:0 auto;padding:0 1.5rem}
+    /* Animation */
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+    /* Mobile */
+    @media(max-width:768px){
+      .navbar__links,.navbar__actions{display:none!important}
+      .navbar__hamburger{display:flex}
+      .booking-bar__form{grid-template-columns:1fr}
+      .hero{padding-top:calc(72px + 2rem);min-height:auto}
+    }
+  </style>
+
+  <!-- Critical CSS (render-blocking, needed for above-fold) -->
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/sections.css">
-  <link rel="stylesheet" href="css/responsive.css">
 
-  <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+  <!-- Non-critical CSS (deferred, loaded after first paint) -->
+  <link rel="stylesheet" href="css/components.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/sections.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/responsive.css" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </noscript>
+
+  <!-- Lucide Icons: load AFTER page renders -->
+  <script src="https://unpkg.com/lucide@0.263.1/dist/umd/lucide.min.js" defer></script>
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://www.rudratravels.com/" />
@@ -36,14 +112,23 @@
   <meta property="og:image" content="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&w=1200&q=80">
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Google Analytics 4 (Phase 5 Tracking) -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <!-- Google Analytics 4 (Phase 5 Tracking) - Deferred for performance -->
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
+    // Defer GA loading until after page is interactive
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        var s = document.createElement('script');
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX';
+        s.async = true;
+        document.head.appendChild(s);
+        s.onload = function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XXXXXXXXXX');
+        };
+      }, 3000);
+    });
   </script>
 
   <!-- Phase 9.0: Speculative Rules API (0.0ms Load Time Hack) -->
@@ -270,7 +355,7 @@
   <!-- ═══════════════════════════════════
        HERO SECTION
        ═══════════════════════════════════ -->
-  <section class="hero" id="hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&w=1920&q=80') center/cover no-repeat;">
+  <section class="hero" id="hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&w=1200&q=75') center/cover no-repeat;">
 
     <div class="hero__content">
       <div class="hero__tag">
@@ -485,9 +570,9 @@
         </div>
 
         <div style="margin-top: 30px; padding-top: 20px; border-top: 1px dashed #ccc; text-align: center;">
-          <div style="font-size: 14px; color: #666; text-transform: uppercase; letter-spacing: 1px;">Estimated Total (Inc. GST)</div>
-          <div id="calc-total" style="font-size: 3rem; font-weight: 800; color: var(--color-accent); line-height: 1;">₹ 0</div>
-          <p style="font-size: 12px; color: #999; margin-top: 10px;">*Move the slider or change options to calculate</p>
+          <div style="font-size: 14px; color: #555; text-transform: uppercase; letter-spacing: 1px;">Estimated Total (Inc. GST)</div>
+          <div id="calc-total" style="font-size: 3rem; font-weight: 800; color: #B45309; line-height: 1;">₹ 0</div>
+          <p style="font-size: 12px; color: #666; margin-top: 10px;">*Move the slider or change options to calculate</p>
         </div>
       </div>
     </div>
@@ -509,7 +594,7 @@
         <div class="card animate-on-scroll stagger-1" id="fleet-sedan">
           <div class="card__image-wrapper">
             <a href="https://wa.me/917380694705?text=Hi%20RUDRA%20TRAVELS!%20%F0%9F%9A%97%0AI%20want%20to%20book%20the%205-Seater%20Sedan%20(WagonR,%20Swift%20Dzire)." target="_blank">
-              <img src="./assets/images/sedan-generated.png" alt="5-Seater Sedan — WagonR, Swift Dzire" class="card__image" id="sedan-image" loading="lazy">
+              <img src="./assets/images/sedan-generated.png" alt="5-Seater Sedan — WagonR, Swift Dzire" class="card__image" id="sedan-image" loading="lazy" decoding="async">
             </a>
           </div>
           <div class="card__body">
@@ -546,7 +631,7 @@
         <div class="card animate-on-scroll stagger-2" id="fleet-suv">
           <div class="card__image-wrapper">
             <a href="https://wa.me/917380694705?text=Hi%20RUDRA%20TRAVELS!%20%F0%9F%9A%97%0AI%20want%20to%20book%20the%207-Seater%20SUV%20(Ertiga,%20Innova%20Crysta)." target="_blank" style="position: relative; display: block;">
-              <img src="./assets/images/suv-generated.png" alt="7-Seater SUV — Ertiga, Innova Crysta" class="card__image" id="suv-image" loading="lazy">
+              <img src="./assets/images/suv-generated.png" alt="7-Seater SUV — Ertiga, Innova Crysta" class="card__image" id="suv-image" loading="lazy" decoding="async">
               <span class="card__badge">Most Popular</span>
             </a>
           </div>
@@ -596,7 +681,7 @@
 
       <div class="routes__grid">
         <a href="https://wa.me/917380694705?text=Hi%20RUDRA%20TRAVELS!%20%F0%9F%9A%97%0AI%20want%20to%20book%20a%20cab%20for%20Delhi%20NCR%20%E2%86%92%20Agra." target="_blank" class="route-card animate-on-scroll stagger-1" id="route-agra" style="text-decoration: none; display: block;">
-          <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=600&q=80" alt="Delhi to Agra by car - Taj Mahal" class="route-card__image" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=400&q=75" alt="Delhi to Agra by car - Taj Mahal" class="route-card__image" loading="lazy" decoding="async">
           <div class="route-card__overlay">
             <span class="route-card__route">Delhi NCR → Agra</span>
             <span class="route-card__distance">230 km · ~4 hrs</span>
@@ -605,7 +690,7 @@
         </a>
 
         <a href="https://wa.me/917380694705?text=Hi%20RUDRA%20TRAVELS!%20%F0%9F%9A%97%0AI%20want%20to%20book%20a%20cab%20for%20Delhi%20NCR%20%E2%86%92%20Jaipur." target="_blank" class="route-card animate-on-scroll stagger-2" id="route-jaipur" style="text-decoration: none; display: block;">
-          <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=600&q=80" alt="Delhi to Jaipur by car - pink city" class="route-card__image" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=400&q=75" alt="Delhi to Jaipur by car - pink city" class="route-card__image" loading="lazy" decoding="async">
           <div class="route-card__overlay">
             <span class="route-card__route">Delhi NCR → Jaipur</span>
             <span class="route-card__distance">280 km · ~5 hrs</span>
@@ -614,7 +699,7 @@
         </a>
 
         <a href="https://wa.me/917380694705?text=Hi%20RUDRA%20TRAVELS!%20%F0%9F%9A%97%0AI%20want%20to%20book%20a%20cab%20for%20Delhi%20NCR%20%E2%86%92%20Rishikesh." target="_blank" class="route-card animate-on-scroll stagger-3" id="route-rishikesh" style="text-decoration: none; display: block;">
-          <img src="https://images.unsplash.com/photo-1605640840605-14ac1855827b?auto=format&fit=crop&w=600&q=80" alt="Delhi to Rishikesh by car - Ganga river" class="route-card__image" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1605640840605-14ac1855827b?auto=format&fit=crop&w=400&q=75" alt="Delhi to Rishikesh by car - Ganga river" class="route-card__image" loading="lazy" decoding="async">
           <div class="route-card__overlay">
             <span class="route-card__route">Delhi NCR → Rishikesh</span>
             <span class="route-card__distance">250 km · ~6 hrs</span>
@@ -623,7 +708,7 @@
         </a>
 
         <a href="https://wa.me/917380694705?text=Hi%20RUDRA%20TRAVELS!%20%F0%9F%9A%97%0AI%20want%20to%20book%20a%20cab%20for%20Delhi%20NCR%20%E2%86%92%20Manali." target="_blank" class="route-card animate-on-scroll stagger-4" id="route-manali" style="text-decoration: none; display: block;">
-          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=600&q=80" alt="Delhi to Manali by car - mountain road" class="route-card__image" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=400&q=75" alt="Delhi to Manali by car - mountain road" class="route-card__image" loading="lazy" decoding="async">
           <div class="route-card__overlay">
             <span class="route-card__route">Delhi NCR → Manali</span>
             <span class="route-card__distance">540 km · ~12 hrs</span>
@@ -632,7 +717,7 @@
         </a>
 
         <a href="https://wa.me/917380694705?text=Hi%20RUDRA%20TRAVELS!%20%F0%9F%9A%97%0AI%20want%20to%20book%20a%20cab%20for%20Delhi%20NCR%20%E2%86%92%20Shimla." target="_blank" class="route-card animate-on-scroll stagger-5" id="route-shimla" style="text-decoration: none; display: block;">
-          <img src="https://images.unsplash.com/photo-1597074866923-dc0589150358?auto=format&fit=crop&w=600&q=80" alt="Delhi to Shimla by car - hill station" class="route-card__image" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1597074866923-dc0589150358?auto=format&fit=crop&w=400&q=75" alt="Delhi to Shimla by car - hill station" class="route-card__image" loading="lazy" decoding="async">
           <div class="route-card__overlay">
             <span class="route-card__route">Delhi NCR → Shimla</span>
             <span class="route-card__distance">350 km · ~8 hrs</span>
@@ -641,7 +726,7 @@
         </a>
 
         <a href="https://wa.me/917380694705?text=Hi%20RUDRA%20TRAVELS!%20%F0%9F%9A%97%0AI%20want%20to%20book%20a%20cab%20for%20Delhi%20NCR%20%E2%86%92%20Udaipur." target="_blank" class="route-card animate-on-scroll stagger-6" id="route-udaipur" style="text-decoration: none; display: block;">
-          <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=600&q=80" alt="Delhi to Udaipur by car - lake city" class="route-card__image" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=400&q=75" alt="Delhi to Udaipur by car - lake city" class="route-card__image" loading="lazy" decoding="async">
           <div class="route-card__overlay">
             <span class="route-card__route">Delhi NCR → Udaipur</span>
             <span class="route-card__distance">660 km · ~12 hrs</span>
@@ -692,7 +777,7 @@
   <!-- ═══════════════════════════════════
        TESTIMONIALS (Swiper Carousel)
        ═══════════════════════════════════ -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Swiper CSS removed: testimonials use CSS grid, not slider -->
   <section class="section" id="testimonials">
     <div class="container">
       <div class="section__header animate-on-scroll">
@@ -978,7 +1063,7 @@
         Chat on WhatsApp
       </a>
       
-      <audio id="ai-voiceover" preload="auto">
+      <audio id="ai-voiceover" preload="none">
         <source src="./assets/audio/voiceover.mp3" type="audio/mpeg">
       </audio>
     </div>
@@ -1000,8 +1085,7 @@
     </a>
   </div>
 
-  <!-- Swiper JS for Testimonials Slider -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Swiper JS removed: testimonials use CSS grid layout, not slider -->
 
   <!-- Scripts -->
   <script src="js/navbar.js" defer></script>

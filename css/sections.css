@@ -504,6 +504,7 @@
   line-height: var(--line-height-relaxed);
   margin-top: var(--spacing-md);
   max-width: 300px;
+  color: #E2E8F0;
 }
 
 .footer__col-title {
@@ -714,7 +715,7 @@
 }
 .info-gain__card-text {
   font-size: 14px;
-  color: #555;
+  color: #444;
 }
 
 /* YouTube Lite */

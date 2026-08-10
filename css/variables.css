@@ -10,6 +10,7 @@
   --color-primary-light:    #1E293B;
   --color-primary-dark:     #020617;
   --color-accent:           #F59E0B; /* Premium Amber/Gold */
+  --color-accent-dark:      #B45309; /* WCAG AA accessible on white bg */
   --color-accent-hover:     #D97706;
   --color-accent-glow:      rgba(245, 158, 11, 0.4);
   --gradient-primary:       linear-gradient(135deg, #0F172A 0%, #1E293B 100%);

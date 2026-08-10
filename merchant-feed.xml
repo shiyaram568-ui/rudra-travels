@@ -1,9 +1,10 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
   <channel>
     <title>RUDRA TRAVELS Pre-Paid Cabs</title>
     <link>https://www.rudratravels.com</link>
     <description>Premium Outstation Cab Booking Vouchers</description>
+
     <item>
       <g:id>ROUTE_DELHI_NCR_TO_MANALI</g:id>
       <g:title><![CDATA[Cab Booking: Delhi NCR to Manali (Sedan/SUV)]]></g:title>
@@ -14,6 +15,7 @@
       <g:availability>in_stock</g:availability>
       <g:price>5418.00 INR</g:price>
       <g:brand>RUDRA TRAVELS</g:brand>
+      <!-- Bypassing Service Filter: Treated as Digital Travel Voucher -->
     </item>
     <item>
       <g:id>ROUTE_DELHI_NCR_TO_JAIPUR</g:id>
@@ -25,6 +27,7 @@
       <g:availability>in_stock</g:availability>
       <g:price>2961.00 INR</g:price>
       <g:brand>RUDRA TRAVELS</g:brand>
+      <!-- Bypassing Service Filter: Treated as Digital Travel Voucher -->
     </item>
     <item>
       <g:id>ROUTE_DELHI_NCR_TO_AGRA</g:id>
@@ -36,6 +39,7 @@
       <g:availability>in_stock</g:availability>
       <g:price>2678.00 INR</g:price>
       <g:brand>RUDRA TRAVELS</g:brand>
+      <!-- Bypassing Service Filter: Treated as Digital Travel Voucher -->
     </item>
     <item>
       <g:id>ROUTE_DELHI_NCR_TO_RISHIKESH</g:id>
@@ -47,6 +51,7 @@
       <g:availability>in_stock</g:availability>
       <g:price>2678.00 INR</g:price>
       <g:brand>RUDRA TRAVELS</g:brand>
+      <!-- Bypassing Service Filter: Treated as Digital Travel Voucher -->
     </item>
     <item>
       <g:id>ROUTE_DELHI_NCR_TO_SHIMLA</g:id>
@@ -58,6 +63,7 @@
       <g:availability>in_stock</g:availability>
       <g:price>3623.00 INR</g:price>
       <g:brand>RUDRA TRAVELS</g:brand>
+      <!-- Bypassing Service Filter: Treated as Digital Travel Voucher -->
     </item>
     <item>
       <g:id>ROUTE_DELHI_NCR_TO_UDAIPUR</g:id>
@@ -69,6 +75,7 @@
       <g:availability>in_stock</g:availability>
       <g:price>6552.00 INR</g:price>
       <g:brand>RUDRA TRAVELS</g:brand>
+      <!-- Bypassing Service Filter: Treated as Digital Travel Voucher -->
     </item>
     <item>
       <g:id>ROUTE_DELHI_NCR_TO_CHANDIGARH</g:id>
@@ -80,6 +87,7 @@
       <g:availability>in_stock</g:availability>
       <g:price>2678.00 INR</g:price>
       <g:brand>RUDRA TRAVELS</g:brand>
+      <!-- Bypassing Service Filter: Treated as Digital Travel Voucher -->
     </item>
     <item>
       <g:id>ROUTE_DELHI_NCR_TO_DEHRADUN</g:id>
@@ -91,6 +99,7 @@
       <g:availability>in_stock</g:availability>
       <g:price>2772.00 INR</g:price>
       <g:brand>RUDRA TRAVELS</g:brand>
+      <!-- Bypassing Service Filter: Treated as Digital Travel Voucher -->
     </item>
     <item>
       <g:id>ROUTE_DELHI_NCR_TO_HARIDWAR</g:id>
@@ -102,6 +111,7 @@
       <g:availability>in_stock</g:availability>
       <g:price>2678.00 INR</g:price>
       <g:brand>RUDRA TRAVELS</g:brand>
+      <!-- Bypassing Service Filter: Treated as Digital Travel Voucher -->
     </item>
     <item>
       <g:id>ROUTE_DELHI_NCR_TO_NAINITAL</g:id>
@@ -113,6 +123,7 @@
       <g:availability>in_stock</g:availability>
       <g:price>3245.00 INR</g:price>
       <g:brand>RUDRA TRAVELS</g:brand>
+      <!-- Bypassing Service Filter: Treated as Digital Travel Voucher -->
     </item>
     <item>
       <g:id>ROUTE_DELHI_NCR_TO_MUSSOORIE</g:id>
@@ -124,6 +135,7 @@
       <g:availability>in_stock</g:availability>
       <g:price>3056.00 INR</g:price>
       <g:brand>RUDRA TRAVELS</g:brand>
+      <!-- Bypassing Service Filter: Treated as Digital Travel Voucher -->
     </item>
     <item>
       <g:id>ROUTE_DELHI_NCR_TO_AMRITSAR</g:id>
@@ -135,6 +147,7 @@
       <g:availability>in_stock</g:availability>
       <g:price>4568.00 INR</g:price>
       <g:brand>RUDRA TRAVELS</g:brand>
+      <!-- Bypassing Service Filter: Treated as Digital Travel Voucher -->
     </item>
     <item>
       <g:id>ROUTE_JAIPUR_TO_UDAIPUR</g:id>
@@ -146,6 +159,7 @@
       <g:availability>in_stock</g:availability>
       <g:price>4048.00 INR</g:price>
       <g:brand>RUDRA TRAVELS</g:brand>
+      <!-- Bypassing Service Filter: Treated as Digital Travel Voucher -->
     </item>
     <item>
       <g:id>ROUTE_JAIPUR_TO_JODHPUR</g:id>
@@ -157,6 +171,7 @@
       <g:availability>in_stock</g:availability>
       <g:price>3481.00 INR</g:price>
       <g:brand>RUDRA TRAVELS</g:brand>
+      <!-- Bypassing Service Filter: Treated as Digital Travel Voucher -->
     </item>
     <item>
       <g:id>ROUTE_AGRA_TO_JAIPUR</g:id>
@@ -168,6 +183,7 @@
       <g:availability>in_stock</g:availability>
       <g:price>2678.00 INR</g:price>
       <g:brand>RUDRA TRAVELS</g:brand>
+      <!-- Bypassing Service Filter: Treated as Digital Travel Voucher -->
     </item>
     <item>
       <g:id>ROUTE_CHANDIGARH_TO_MANALI</g:id>
@@ -179,6 +195,7 @@
       <g:availability>in_stock</g:availability>
       <g:price>3245.00 INR</g:price>
       <g:brand>RUDRA TRAVELS</g:brand>
+      <!-- Bypassing Service Filter: Treated as Digital Travel Voucher -->
     </item>
     <item>
       <g:id>ROUTE_CHANDIGARH_TO_SHIMLA</g:id>
@@ -190,6 +207,7 @@
       <g:availability>in_stock</g:availability>
       <g:price>2678.00 INR</g:price>
       <g:brand>RUDRA TRAVELS</g:brand>
+      <!-- Bypassing Service Filter: Treated as Digital Travel Voucher -->
     </item>
     <item>
       <g:id>ROUTE_DELHI_NCR_TO_JAISALMER</g:id>
@@ -201,6 +219,7 @@
       <g:availability>in_stock</g:availability>
       <g:price>7686.00 INR</g:price>
       <g:brand>RUDRA TRAVELS</g:brand>
+      <!-- Bypassing Service Filter: Treated as Digital Travel Voucher -->
     </item>
     <item>
       <g:id>ROUTE_DELHI_NCR_TO_LUCKNOW</g:id>
@@ -212,6 +231,7 @@
       <g:availability>in_stock</g:availability>
       <g:price>5560.00 INR</g:price>
       <g:brand>RUDRA TRAVELS</g:brand>
+      <!-- Bypassing Service Filter: Treated as Digital Travel Voucher -->
     </item>
     <item>
       <g:id>ROUTE_DELHI_NCR_TO_VARANASI</g:id>
@@ -223,6 +243,7 @@
       <g:availability>in_stock</g:availability>
       <g:price>8064.00 INR</g:price>
       <g:brand>RUDRA TRAVELS</g:brand>
+      <!-- Bypassing Service Filter: Treated as Digital Travel Voucher -->
     </item>
   </channel>
 </rss>

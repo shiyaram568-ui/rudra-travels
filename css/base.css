@@ -152,7 +152,7 @@ p {
 
 /* ── Utility Classes ── */
 .text-center { text-align: center; }
-.text-accent { color: var(--color-accent); }
+.text-accent { color: var(--color-accent-dark); }
 .text-primary { color: var(--color-primary); }
 .text-muted { color: var(--color-text-muted); }
 
@@ -313,4 +313,17 @@ p {
 /* Fitts's Law Target Acquisition Expansion */
 .btn--whatsapp:hover {
   transform: scale(1.05) !important;
+}
+
+/* ── Performance: content-visibility for below-fold sections ── */
+/* Tells browser to skip rendering offscreen sections until scrolled near */
+#fleet,
+#routes,
+#how-it-works,
+#testimonials,
+#faq,
+#contact,
+.footer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 600px;
 }
